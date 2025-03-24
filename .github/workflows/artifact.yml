@@ -31,7 +31,8 @@ jobs:
         uses: actions/download-artifact@4
         with: 
           name: hello-artifact
-          path: hello.txt
+          path: ./artifacts
         
-      run: cat hello.txt
+      - name: disply file
+        run: cat ./artifacts/hello.txt
 
