@@ -28,7 +28,7 @@ jobs:
       - name: download-file
         uses: action/checkout@4
       - name: Download text file
-        uses: actions/download-artifact@4
+        uses: actions/download-artifact@v4
         with: 
           name: hello-artifact
           path: ./artifacts
